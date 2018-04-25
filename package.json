@@ -1,0 +1,20 @@
+{
+  "name": "react-connect-elements",
+  "version": "1.0.0",
+  "main": "dist/react-connect-elements.js",
+  "source": "src/index.js",
+  "author": "Emerson Laurentino <emersonlaurentino@hotmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "microbundle -o dist",
+    "dev": "microbundle watch"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  },
+  "devDependencies": {
+    "microbundle": "^0.4.4"
+  }
+}
