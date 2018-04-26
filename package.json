@@ -1,7 +1,7 @@
 {
   "name": "react-connect-elements",
-  "version": "1.0.0",
-  "description": "Connect elements with SVG path",
+  "version": "0.0.1",
+  "description": "Connect elements with SVG",
   "license": "MIT",
   "author": "Emerson Laurentino <emersonlaurentino@hotmail.com>",
   "homepage": "https://github.com/emersonlaurentino/react-connect-elements",

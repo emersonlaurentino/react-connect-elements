@@ -1,6 +1,6 @@
 # React Connect Elements
 
-Connect elements with SVG path
+Connect elements with SVG
 
 ## Setup
 
