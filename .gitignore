@@ -1,5 +1,27 @@
-*.log
+# Mac OSX Files
+.AppleDouble
+.DS_Store
+.LSOverride
+.Spotlight-V100
+.Trashes
+
+# NPM / Yarn
+coverage
 dist
+lib
 node_modules
+npm-debug.log
 package-lock.json
+yarn-error.log
 yarn.lock
+
+# General Files
+.cache
+.hg
+.idea
+.project
+.sass-cache
+.svn
+.tmp
+.vscode
+*.log
