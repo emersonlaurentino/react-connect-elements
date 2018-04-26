@@ -11,24 +11,15 @@
     "/dist"
   ],
   "scripts": {
-    "build": "microbundle -o dist",
-    "build:dev": "microbundle watch",
+    "build": "rollup -c",
     "demo:build": "parcel build --out-dir demo/dist demo/index.html --public-url=/react-popper",
     "demo:deploy": "yarn demo:build && gh-pages -d demo/dist",
     "demo:dev": "parcel --out-dir demo/dist demo/index.html",
     "lint": "esw -c .eslintrc src --ext .js --ignore-path .eslintignore --color",
     "lint:fix": "npm run lint -- --fix",
     "lint:watch": "npm run lint -- --watch",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "precommit": "pretty-quick --staged && test",
+    "precommit": "pretty-quick --staged",
     "prepare": "npm run build"
-  },
-  "jest": {
-    "setupTestFrameworkScriptFile": "<rootDir>jest.setup.js",
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
-    ]
   },
   "repository": {
     "type": "git",
@@ -45,37 +36,35 @@
     "connect"
   ],
   "peerDependencies": {
-    "react": "0.14.x || ^15.0.0 || ^16.0.0",
-    "react-dom": "0.14.x || ^15.0.0 || ^16.0.0"
-  },
-  "dependencies": {
-    "prop-types": "^15.6.1",
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2"
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
   },
   "devDependencies": {
+    "babel-core": "^6.26.2",
     "babel-eslint": "^8.2.3",
-    "babel-jest": "^22.4.3",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
-    "enzyme": "^3.3.0",
-    "enzyme-adapter-react-16": "^1.1.1",
-    "enzyme-to-json": "^3.3.3",
-    "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-import": "^2.11.0",
-    "eslint-plugin-jest": "^21.15.1",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-react": "^7.7.0",
     "eslint-watch": "^3.1.4",
+    "eslint": "^4.19.1",
     "gh-pages": "^1.1.0",
-    "jest": "^22.4.3",
-    "microbundle": "^0.4.4",
     "parcel-bundler": "^1.7.1",
     "prettier": "^1.12.1",
-    "pretty-quick": "^1.4.1"
+    "pretty-quick": "^1.4.1",
+    "prop-types": "^15.6.1",
+    "react-dom": "^16.3.2",
+    "react": "^16.3.2",
+    "rollup-plugin-babel": "^3.0.4",
+    "rollup-plugin-commonjs": "^9.1.0",
+    "rollup-plugin-filesize": "^1.5.0",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-uglify": "^3.0.0",
+    "rollup": "^0.58.2"
   }
 }
