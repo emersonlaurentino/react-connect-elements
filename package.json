@@ -12,7 +12,7 @@
   ],
   "scripts": {
     "build": "rollup -c",
-    "demo:build": "parcel build --out-dir demo/dist demo/index.html --public-url=/react-popper",
+    "demo:build": "parcel build --out-dir demo/dist demo/index.html --public-url=/react-connect-elements",
     "demo:deploy": "yarn demo:build && gh-pages -d demo/dist",
     "demo:dev": "parcel --out-dir demo/dist demo/index.html",
     "lint": "esw -c .eslintrc src --ext .js --ignore-path .eslintignore --color",
