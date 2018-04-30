@@ -2,6 +2,8 @@
 
 Connect elements with SVG
 
+[DEMO](https://emersonlaurentino.github.io/react-connect-elements/)
+
 ## Setup
 
 ```bash
