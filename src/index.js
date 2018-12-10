@@ -27,9 +27,11 @@ export default class ReactConnectElements extends PureComponent {
   }
   
   componentDidUpdate(prevProps) {
-    setTimeout(() => {
-      this.checkSelector();      
-    }, 100);
+    if (prevProps.elements.length !== this.props.elements.length) {
+      setTimeout(() => {
+        this.checkSelector();      
+      }, 100);
+    }
   }
 
   checkSelector = () => {
